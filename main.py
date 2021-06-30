@@ -20,7 +20,6 @@ b = Style.BRIGHT
 print(f"""
 {b+Fore.GREEN}
 {b+Fore.BLUE} > {Fore.RESET}MASS DM v1
-{b+Fore.BLUE} > {Fore.RESET}Support - Zityy#0001 Zityy#0002
 {b+Fore.GREEN}
 """)
 
@@ -33,7 +32,7 @@ async def on_connect():
   for user in massdmzityy.user.friends:
     try:
       await user.send(message)
-      time.sleep(.1)
+      time.sleep(30)
       print(f'Sent:' + Fore.GREEN + f' {user.name}')
     except:
        print(f"Failed: {user.name}")
